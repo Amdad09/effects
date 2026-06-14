@@ -1,11 +1,17 @@
-import MyComponent from "./components/MyComponent"
+// import MyComponent from "./components/MyComponent"
+
+import Dialogue from './components/Dialogue';
+
+// import Map from "./components/Map"
 
 function App() {
-  return (
-    <div>
-      <MyComponent />
-    </div>
-  )
+    return (
+        <div>
+            {/* <MyComponent /> */}
+            {/* <Map/> */}
+            <Dialogue />
+        </div>
+    );
 }
 
-export default App
+export default App;

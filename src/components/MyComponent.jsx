@@ -1,38 +1,18 @@
-import { useEffect, useState } from 'react';
-import VIdeoPlayer from './VIdeoPlayer';
+// import Video from './Video';
+// import Counter from './Counter';
+
+// import { useState } from "react";
+// import ChatRoomt from "./ChatRoomt";
 
 const MyComponent = () => {
-    const [count, setCount] = useState(0);
-    const [text, setText] = useState('');
-    const [isPlaying, setIsPlaying] = useState(false);
-
-    const handleClick = () => {
-        setCount(count + 1);
-        console.log(count); //always hold previous value
-    };
-    useEffect(() => {
-        console.log('Rendering ...');
-    }, []);
+    // const [isShow, setIsShow] = useState(true);
 
     return (
         <div>
-            <h3>My component</h3>
-            <input
-                value={text}
-                onChange={(e) => setText(e.target.value)}
-                type="text"
-            />
-            <button onClick={handleClick}>Render {count}</button>
-            <br />
-            <br />
-            <button onClick={() => setIsPlaying((pre) => !pre)}>
-                {isPlaying ? 'Pause' : 'Play'}
-            </button>
-            <VIdeoPlayer isPlaying={isPlaying}
-                src={
-                    'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4'
-                }
-            />
+            {/* <Video/> */}
+            {/* <Counter /> */}
+            {/* <button onClick={()=>setIsShow((pre)=>!pre)}>{isShow ? 'Hide':'Show' }</button>
+            {isShow && <ChatRoomt />} */}
         </div>
     );
 };
