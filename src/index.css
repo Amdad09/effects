@@ -49,6 +49,7 @@ ul {
 button, input {
     display: block;
     margin-bottom: 20px;
+    margin: 5px;
 }
 video {
     width: 250px;
